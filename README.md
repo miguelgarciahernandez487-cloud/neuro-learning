@@ -20,7 +20,7 @@ Mis notebooks de práctica de neuroingeniería.
    ```
 3. Actívalo (usa el nombre que aparece en la primera línea de `environment.yml`):
    ```bash
-   conda activate NOMBRE_DEL_ENTORNO
+   conda activate neuro
    ```
 4. Abre Jupyter y corre los notebooks en orden:
    ```bash
@@ -29,7 +29,7 @@ Mis notebooks de práctica de neuroingeniería.
 
 ## Qué no se sube a Git (.gitignore)
 
-- `.ipynb_checkpoints/`: copias automáticas de Jupyter.
-- `__pycache__/`: archivos que genera Python al ejecutar código.
-- `data/`: datos pesados.
-- `.env`: contraseñas y tokens.
+- `.ipynb_checkpoints/`: copias automáticas que Jupyter genera solo; no aportan nada al historial y solo ensucian los commits.
+- `__pycache__/`: archivos compilados que Python genera al ejecutar código; se regeneran solos.
+- `data/`: los datos suelen pesar mucho y GitHub no está hecho para guardarlos.
+- `.env`: guarda contraseñas y tokens, y nunca deben subirse a GitHub.
